@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MOZARTvin | Galaxy Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 40px;
+    }
+
+    .skill-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .skill-icon {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 0, 204, 0.5);
+      padding: 10px;
+      background-color: rgba(255,255,255,0.04);
+    }
+
+    .skill-label {
+      font-size: 14px;
+      color: #fff;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- === Navbar Atas === -->
+  <nav class="navbar-atas">
+    <div class="logo-container">
+      <img src="logo.png" alt="Logo" class="logo">
+      <h1 class="mozartvin">MOZARTvin</h1>
+    </div>
+    <ul class="navbar">
+      <li><a href="#beranda" class="active">Beranda</a></li>
+      <li><a href="#tentang" class="">Tentang Saya</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- === Main Content === -->
+  <main>
+
+    <!-- Beranda -->
+    <section id="beranda" class="section">
+      <h2 class="welcome">Welcome to web MOZARTvin</h2>
+    </section>
+
+    <!-- Tentang Saya -->
+    <section id="tentang" class="section">
+      <div class="tentang-container">
+        <img src="logo.png" alt="Foto Saya" class="tentang-foto">
+        <div class="tentang-text">
+          <h2>Tentang Saya</h2>
+          <p>Halo, saya MOZARTvin. Saya seorang pengembang web dengan minat tinggi dalam desain futuristik, estetika elegan, dan seni luar angkasa.</p>
+        </div>
+      </div>
+
+      <div class="text-skill" style="margin-top: 60px;">
+        <h2>My Skills</h2>
+      </div>
+      <div class="skill-list">
+        <div class="skill-item">
+          <img src="html.png" alt="HTML" class="skill-icon">
+          <div class="skill-label">HTML</div>
+        </div>
+        <div class="skill-item">
+          <img src="css.png" alt="CSS" class="skill-icon">
+          <div class="skill-label">CSS</div>
+        </div>
+        <div class="skill-item">
+          <img src="js.png" alt="JavaScript" class="skill-icon">
+          <div class="skill-label">JavaScript</div>
+        </div>
+        <div class="skill-item">
+          <img src="python.png" alt="Python" class="skill-icon">
+          <div class="skill-label">Python</div>
+        </div>
+        <div class="skill-item">
+          <img src="vsc.png" alt="VS Code" class="skill-icon">
+          <div class="skill-label">VS Code</div>
+        </div>
+        <div class="skill-item">
+          <img src="github.png" alt="GitHub" class="skill-icon">
+          <div class="skill-label">GitHub</div>
+        </div>
+      </div>
+
+      <div class="projek">
+        <h2>Projek Saya</h2>
+        <p>- Penggunaan front-end & back-end</p>
+        <p>- Pembuatan website</p>
+        <p>- Update skills</p>
+      </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak" class="section kontak-section">
+      <div class="kontak-card">
+        <h2>Hubungi Saya</h2>
+        <div class="kontak-icons">
+          <a class="kontak-icon" href="https://wa.me/6288751993694" target="_blank">
+            <img src="wa.png" alt="WhatsApp" class="kontak-logo" /> WhatsApp
+          </a>
+          <a class="kontak-icon" href="https://instagram.com/ARZYUANX" target="_blank">
+            <img src="ig.png" alt="Instagram" class="kontak-logo" /> Instagram
+          </a>
+          <a class="kontak-icon" href="https://tiktok.com/@nacthion" target="_blank">
+            <img src="tiktok.png" alt="TikTok" class="kontak-logo" /> TikTok
+          </a>
+          <a class="kontak-icon" href="https://github.com/nama_github" target="_blank">
+            <img src="github.png" alt="GitHub" class="kontak-logo" /> GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

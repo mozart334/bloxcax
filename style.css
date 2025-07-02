@@ -1,0 +1,248 @@
+/* === Reset & Global === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: url('bck3.png') no-repeat center center fixed;
+  background-size: cover;
+  color: orange;
+  padding-top: 80px;
+}
+
+
+/* === Navbar === */
+.navbar-atas {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #0f0f2b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  z-index: 1000;
+  border-bottom: 2px solid #ff00cc;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 40px;
+  border-radius: 50%;
+}
+
+.mozartvin {
+  font-size: 24px;
+  font-weight: bold;
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+  background-size: 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: geserWarna 10s linear infinite;
+}
+
+@keyframes geserWarna {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+  color: #ff00cc;
+}
+
+/* === Section === */
+.section {
+  padding: 100px 30px;
+  max-width: 1000px;
+  margin: 0 auto 100px auto;
+  text-align: center;
+}
+
+/* === Beranda === */
+.welcome {
+  font-size: 36px;
+  color: #ff00cc;
+  text-shadow: 0 0 10px #ff00cc;
+  margin-bottom: 40px;
+  margin-top: 50%;
+}
+
+/* === Tentang Saya === */
+.tentang-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50%;
+}
+
+.tentang-foto {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.tentang-text p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-top: 20px;
+}
+
+/* === Skills === */
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
+  margin-top: 50%;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 20px rgba(0, 255, 255, 0.5), 0 0 15px rgba(255, 0, 204, 0.3);
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.7), 0 0 40px rgba(255, 0, 204, 0.4);
+}
+
+.skill-label {
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* === Projek === */
+.projek {
+  margin-top: 50px;
+}
+
+.projek p {
+  margin-top: 10px;
+}
+
+/* === Kontak === */
+.kontak-card {
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(255, 0, 204, 0.2);
+  backdrop-filter: blur(12px);
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 50%;
+}
+
+.kontak-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.kontak-icon {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 15px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(255, 0, 204, 0.2);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.kontak-icon:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: scale(1.05);
+}
+
+.kontak-logo {
+  width: 24px;
+  height: 24px;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .skill-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .skill-label {
+    font-size: 12px;
+  }
+
+  .tentang-foto {
+    width: 90px;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar-atas {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .section {
+    padding: 80px 20px;
+  }
+
+  .kontak-card {
+    padding: 20px;
+  }
+}
